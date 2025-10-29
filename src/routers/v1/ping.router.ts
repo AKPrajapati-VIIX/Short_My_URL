@@ -1,7 +1,7 @@
 import express from 'express';
-import { pingHandler } from '../../controllers/ping.controller';
-import {  validateRequestBody } from '../../validators';
-import { pingSchema } from '../../validators/ping.validator';
+import { pingHandler } from '../../controllers/ping.controller.js';
+import {  validateRequestBody } from '../../validators/index.js';
+import { pingSchema } from '../../validators/ping.validator.js';
 
 const pingRouter = express.Router();
 

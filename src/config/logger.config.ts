@@ -1,5 +1,5 @@
 import winston from "winston";
-import { getCorrelationId } from "../utils/errors/helpers/request.helpers";
+import { getCorrelationId } from "../utils/helpers/request.helpers.js";
 import DailyRotateFile from "winston-daily-rotate-file";
 
 const logger = winston.createLogger({

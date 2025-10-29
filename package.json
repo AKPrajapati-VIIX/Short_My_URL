@@ -4,24 +4,33 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/server.ts",
-    "dev": "nodemon src/server.ts"
+    "dev": "tsc -b && node dist/server.js"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "dotenv": "^16.4.7",
+    "@trpc/server": "^11.6.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/uuid": "^10.0.0",
+    "@types/winston": "^2.4.4",
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.6.3",
+    "superjson": "^2.2.3",
     "uuid": "^11.1.0",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0",
-    "zod": "^3.24.2"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@types/express": "^5.0.1",
-    "@types/node": "^22.14.0",
-    "nodemon": "^3.1.9",
+    "@trpc/server": "^11.6.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.18.12",
+    "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }

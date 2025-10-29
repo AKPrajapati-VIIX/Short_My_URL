@@ -1,6 +1,7 @@
-import { NextFunction, Request, Response } from 'express';
+import type { NextFunction, Request, Response } from 'express';
 import { v4 as uuidV4 } from 'uuid';
-import { asyncLocalStorage } from '../utils/errors/helpers/request.helpers';
+import { asyncLocalStorage, getCorrelationId} from '../utils/helpers/request.helpers.js';
+// import { getCorrelationId } from '../utils/helpers/request.helpers';
 
 export const attachCorrelationIdMiddleware = (req: Request, res: Response, next: NextFunction) => {
     // Generate a unique correlation ID
@@ -14,3 +15,9 @@ export const attachCorrelationIdMiddleware = (req: Request, res: Response, next:
         next();
     });
 }
+
+
+
+console.log(`Request Correlation ID: ${getCorrelationId()}`);
+
+

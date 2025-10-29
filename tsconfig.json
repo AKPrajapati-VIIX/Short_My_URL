@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    // Project Structure
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Target & Module
+    "target": "ES2022",            // Modern JS features
+    "module": "NodeNext",          // Node.js ESM support
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,       // Allows default imports from CommonJS
+    "forceConsistentCasingInFileNames": true,
+
+    // Node.js types
+    "lib": ["ES2022"],
+    "types": ["node"],
+
+    // Source maps & declarations
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Strict type checking
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+
+    // Module / output safety
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "moduleDetection": "force",
+
+    // Optional: JSX support if needed
+    "jsx": "react-jsx"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

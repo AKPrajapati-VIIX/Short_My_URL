@@ -1,6 +1,6 @@
-import { NextFunction, Request, Response } from "express";
-import { AnyZodObject } from "zod";
-import logger from "../config/logger.config";
+import type { NextFunction, Request, Response } from "express";
+import type { AnyZodObject } from "zod";
+import logger from "../config/logger.config.js";
 
 /**
  * 
