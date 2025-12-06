@@ -6,7 +6,7 @@
     "start": "ts-node src/server.ts",
     "dev": "tsc -b && node dist/server.js"
   },
-  "type": "module",
+ 
   "keywords": [],
   "author": "",
   "license": "ISC",

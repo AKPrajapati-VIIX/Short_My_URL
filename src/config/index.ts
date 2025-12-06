@@ -1,5 +1,5 @@
-import path from 'path';
-import dotenv from 'dotenv';
+// import path from 'path';
+// import dotenv from 'dotenv';
 
 // ✅ Explicitly load the .env file from your project root
 // const envPath = path.resolve(__dirname, '../.env');
